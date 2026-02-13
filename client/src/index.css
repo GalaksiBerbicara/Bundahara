@@ -1,0 +1,137 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@layer base {
+  body {
+    @apply transition-colors duration-500 ease-in-out bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100;
+  }
+}
+@media print {
+  .no-print,
+  .not-print {
+    display: none !important;
+  }
+  /* Maksimalkan lebar container utama */
+  .lg\:col-span-2 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Buat tabel memenuhi kertas */
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  /* Hilangkan bayangan (shadow) biar bersih di kertas */
+  .shadow-sm {
+    box-shadow: none !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+  /* 1. Sembunyikan Sidebar, tombol-tombol, filter, dan form input */
+  aside,
+  button,
+  .no-print,
+  input,
+  select,
+  .lg\:col-span-1 {
+    /* Ini class container form kamu */
+    display: none !important;
+  }
+
+  /* 2. Sembunyikan Kolom Aksi di tabel */
+  /* Kita targetkan kolom terakhir di thead dan tbody */
+  th:last-child,
+  td:last-child {
+    display: none !important;
+  }
+
+  /* 3. Maksimalkan lebar konten */
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  .max-w-6xl {
+    max-width: 100% !important;
+  }
+
+  /* 4. Sembunyikan garis horizontal atau elemen dekoratif yang ganggu */
+  hr {
+    display: none !important;
+  }
+
+  /* 5. Paksa warna badge tetap muncul (opsional) */
+  .bg-emerald-100,
+  .bg-red-100,
+  .bg-amber-100 {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}
+select {
+  /* Memberikan ruang agar saat diklik tidak terlalu kaku */
+  line-height: 1.5;
+}
+
+/* Sedikit styling untuk list yang terbuka di beberapa browser */
+select option {
+  padding: 12px;
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+/* Agar saat focus, outline biru bawaan browser tidak merusak rounded corners */
+select:focus {
+  outline: none;
+  border-radius: 1rem; /* 16px */
+}
+@keyframes fadeInZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-in {
+  animation: fadeInZoom 0.2s ease-out forwards;
+}
+
+body {
+  @apply transition-colors duration-300;
+}
+
+.dark ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0f172a; /* Slate 950 */
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #1e293b; /* Slate 800 */
+  border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #334155; /* Slate 700 */
+}
