@@ -24,20 +24,17 @@ Sistem Manajemen Aset & Inventaris 'Bundahara' - Modern Dashboard dengan React, 
 1. **Clone repository ini:**
    ```bash
    git clone [https://github.com/GalaksiBerbicara/Bundahara.git](https://github.com/GalaksiBerbicara/Bundahara.git)
-Masuk ke direktori project:
 
 2. **Masuk ke direktori project:**
-Bash
-cd bundahara
-Install dependencies:
+    ```bash
+    cd bundahara
 
 3. **Install dependencies:**
-Bash
-npm install
-Jalankan aplikasi:
+    ```bash
+    npm install
 
 4. **Jalankan aplikasi:**
-Bash
-npm run dev
+    ```bash
+    npm run dev
 
 Dibuat dengan ❤️ oleh Val
