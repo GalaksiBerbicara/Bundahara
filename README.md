@@ -2,21 +2,42 @@
 
 **Bundahara** adalah aplikasi manajemen aset modern yang dirancang dengan antarmuka yang intuitif dan estetik. Fokus pada pengalaman pengguna (UX) yang mulus dengan sentuhan *Glassmorphism* dan fitur dashboard yang informatif.
 
+Sistem Manajemen Aset & Inventaris 'Bundahara' - Modern Dashboard dengan React, Tailwind CSS, dan Glassmorphism UI.
+
 ## ✨ Fitur Unggulan
-- 📊 **Dynamic Dashboard**: Visualisasi sebaran stok aset menggunakan Recharts.
-- 🔐 **Secure Authentication**: Sistem Login dan Register dengan JWT.
-- 🎨 **Modern UI/UX**: Menggunakan Tailwind CSS dengan efek Backdrop Blur dan Dark Mode support.
-- 🔔 **Interactive Notifications**: Notifikasi real-time menggunakan SweetAlert2.
-- 📱 **Responsive Design**: Tampilan optimal di berbagai perangkat.
+- 📊 **Dynamic Dashboard**: Visualisasi sebaran stok aset menggunakan Recharts yang interaktif.
+- 🔐 **Secure Authentication**: Sistem Login dan Register yang aman (Support JWT).
+- 🎨 **Modern UI/UX**: Menggunakan Tailwind CSS dengan efek Backdrop Blur dan dukungan Dark Mode.
+- 🔔 **Interactive Notifications**: Notifikasi real-time yang elegan menggunakan SweetAlert2 Toast.
+- 📱 **Responsive Design**: Tampilan optimal dan tetap cantik di berbagai ukuran layar.
 
 ## 🛠️ Tech Stack
 - **Frontend**: React.js, Tailwind CSS
 - **Icons**: Lucide React
 - **Charts**: Recharts
-- **Components**: Axios, SweetAlert2, React Router DOM
-- **Backend (API)**: Node.js / Express (Optional mention)
+- **Notifications**: SweetAlert2
+- **Routing**: React Router DOM
+- **HTTP Client**: Axios
 
 ## 🚀 Cara Menjalankan Project
-1. Clone repository ini:
+
+1. **Clone repository ini:**
    ```bash
-   git clone [https://github.com/username-kamu/nama-repo.git](https://github.com/username-kamu/nama-repo.git)
+   git clone [https://github.com/GalaksiBerbicara/Bundahara.git](https://github.com/GalaksiBerbicara/Bundahara.git)
+Masuk ke direktori project:
+
+2. **Masuk ke direktori project:**
+Bash
+cd bundahara
+Install dependencies:
+
+3. **Install dependencies:**
+Bash
+npm install
+Jalankan aplikasi:
+
+4. **Jalankan aplikasi:**
+Bash
+npm run dev
+
+Dibuat dengan ❤️ oleh Val
